@@ -15,16 +15,17 @@ var paths={
     "getDataProvide":G_domain + '/dataVisualization/dataSourceMonitor/getDataProvide',
     "getDataSave":G_domain + '/dataVisualization/dataSourceMonitor/getDataSave'
 };
+var G_domaint="master/";
 paths={
-    "getDataGrab":'data/getDataGrab.json',
-    "getGrabData":'data/getGrabData.json',
-    "getProvideData":'data/getProvideData.json',
-    "getBigDataManage1":'data/getBigDataManage1.json',
-    "getWarningInfo":'data/getWarningInfo.json',     //1.4
-    "getDeveloperInfo":'data/getDeveloperInfo.json',                //3.2
-    "getSaveProcess":'data/getSaveProcess.json',          //2.1
-    "getDataProvide":'data/getDataProvide.json',
-    "getDataSave":'data/getDataSave.json'
+    "getDataGrab":G_domaint+'data/getDataGrab.json',
+    "getGrabData":G_domaint+'data/getGrabData.json',
+    "getProvideData":G_domaint+'data/getProvideData.json',
+    "getBigDataManage1":G_domaint+'data/getBigDataManage1.json',
+    "getWarningInfo":G_domaint+'data/getWarningInfo.json',     //1.4
+    "getDeveloperInfo":G_domaint+'data/getDeveloperInfo.json',                //3.2
+    "getSaveProcess":G_domaint+'data/getSaveProcess.json',          //2.1
+    "getDataProvide":G_domaint+'data/getDataProvide.json',
+    "getDataSave":G_domaint+'data/getDataSave.json'
 };
 
 
