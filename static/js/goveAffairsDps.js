@@ -2,7 +2,7 @@
  * Created by windowss on 2017/5/19.
  */
 
-var G_domaint="master/";
+var G_domaint="master/master/";s
 paths={
     "getDataGrab":G_domaint+'data/getDataGrab.json',
     "getGrabData":G_domaint+'data/getGrabData.json',
