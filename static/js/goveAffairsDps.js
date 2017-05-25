@@ -2,7 +2,7 @@
  * Created by windowss on 2017/5/19.
  */
 
-var G_domaint="https://github.com/Aamiryuan/DPS_V/blob/master/data/";
+var G_domaint="https://github.com/Aamiryuan/DPS_V/blob/master/";
 var paths={
     "getDataGrab":G_domaint+'data/getDataGrab.json',
     "getGrabData":G_domaint+'data/getGrabData.json',
