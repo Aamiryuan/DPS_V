@@ -1,20 +1,7 @@
 /**
  * Created by windowss on 2017/5/19.
  */
-//var G_domain ='http://210.13.50.98:10015';
-var G_domain ='http://103.235.234.108:13025';
-var G_domain2 ='http://192.168.0.115:8082';
-var paths={
-    "getDataGrab":G_domain +'/dataVisualization/dataSourceMonitor/getDataGrab',
-    "getGrabData":G_domain + '/dataVisualization/dataSourceMonitor/getGrabData',
-    "getProvideData":G_domain + '/dataVisualization/dataSourceMonitor/getProvideData',
-    "getBigDataManage1":G_domain+'/dataVisualization/dataSave/getBigDataManage1',
-    "getWarningInfo":G_domain+'/dataVisualization/dpsController/getWarningInfo',     //1.4
-    "getDeveloperInfo":G_domain+'/dataVisualization/dpsController/getDeveloperInfo',                 //3.2
-    "getSaveProcess":G_domain+'/dataVisualization/dataSave/getSaveProcess',           //2.1
-    "getDataProvide":G_domain + '/dataVisualization/dataSourceMonitor/getDataProvide',
-    "getDataSave":G_domain + '/dataVisualization/dataSourceMonitor/getDataSave'
-};
+
 var G_domaint="master/";
 paths={
     "getDataGrab":G_domaint+'data/getDataGrab.json',
