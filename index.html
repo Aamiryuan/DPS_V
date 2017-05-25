@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>政务DPS一体化平台</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="bookmark" href="favicon.ico">
+    <link rel="stylesheet" href="static/css/common.css" type="text/css">
+    <!--<link rel="stylesheet" href="static/css/starrySky.css" type="text/css">-->
+    <link rel="stylesheet" href="static/css/goveAffairsDps.css" type="text/css">
+</head>
+<!--<canvas id="starrySky"></canvas>-->
+<body id="pageWrapper">
+<header class="borderColor">
+    <img class="youelogo" src="static/img/youeLogo.png">
+
+    <a href="#" class="logoA"><span>政务DPS一体化平台V1.01.1运行情况</span></a>
+    <ul class="userTimes"><li id="timeDps">12:30:45</li><li class="fengexian"></li><li>管理员</li></ul>
+    <span class="state"></span>
+</header>
+<section>
+    <div class="dpsLayoutl borderColor dpsLayout">
+        <!--<h5 class="titlenav">服务器运行状态</h5>-->
+        <dl class="titlenav"><dt><h4>服务器运行状态</h4></dt><dd><span>当前运行状态:</span><strong>正常</strong></dd></dl>
+        <ul class="serverRun runStatus">
+            <li class="serverRunl"><h5>当前状态：<span>可用</span>IP地址：<span>192.180.0.1</span>操作系统：<span>CentOS</span>机器名：<span>youedata</span></h5>
+                <ol class="serverRunOlt serverRunOlta">
+                    <li><h6>CPU平均利用率</h6><div id="cpuStatu"></div></li>
+                    <li><h6>内存平均利用率</h6><div id="neicunStatu"></div></li>
+                </ol>
+                <ol class="serverRunOlt serverRunOltb" id="serRunFenqu">
+                    <li><h6>分区E利用率</h6><strong><i style="width: 2.4vw"></i></strong><span>70.02%</span></li>
+                    <li><h6>分区D利用率</h6><strong><i style="width: 1.8vw"></i></strong><span>52.94%</span></li>
+                    <li><h6>分区C利用率</h6><strong><i style="width: 2.8vw"></i></strong><span>82.35%</span></li>
+                    <li><h6>分区B利用率</h6><strong><i style="width: 3.2vw"></i></strong><span>92.12%</span></li>
+                </ol>
+                <ol class="serverRunOlt serverRunOltc">
+                    <li><h6>本地连接1</h6><span>接口正常</span></li>
+                    <li><h6>本地连接2</h6><span id="serverYc">接口异常</span></li>
+                    <li><h6>本地连接3</h6><span>接口正常</span></li>
+                </ol>
+            </li>
+            <li class="serverRunr serverRunrWar" ><h5>警告一览</h5>
+                <div id="serverWarn"></div>
+                <ol class="serverRunOlr" id="serverRunOlr">
+                    <li><strong style="background-color:#2b96c4">致命</strong><span class="serverRunZm">64</span>个</li>
+                    <li><strong style="background-color:#394264">严重</strong><span class="serverRunYz">72</span>个</li>
+                    <li><strong style="background-color:#5a648a">警告</strong><span class="serverRunJg">84</span>个</li>
+                    <li><strong style="background-color:#ffa900">主要</strong><span class="serverRunZy">28</span>个</li>
+                </ol>
+                <p  class="serverRunPr" ><span id="serverTotals">248</span>个</p>
+            </li>
+            <li class="serverRunl serverRunb"><h5>各服务器CPU利用率</h5>
+                <div id="cpuUseRatio"></div>
+                <!--<p></p>-->
+            </li>
+            <li class="serverRunr serverRunb"><h5 id="servRun"><span class="actives">服务器1</span><span>服务器2</span><span>服务器3</span><span>服务器4</span><span>服务器5</span></h5>
+                <ol class="serverRunOl" id="cpuWendu">
+                    <li id="storUseRatio"></li>
+                    <li class="stroCpu"><h6>cpu温度</h6><span>48°</span>c</li>
+                    <li class="stroYp"><h6>硬盘温度</h6><span>39°</span>c</li>
+                    <li class="stroZb"><h6>主板温度</h6><span>42°</span>c</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <div class="dpsLayoutr borderColor dpsLayout">
+        <dl class="titlenav"><dt><h4>DaaS运行情况</h4></dt><dd><span>已入库数据量</span>
+            <ul><li>0</li><li>7</li><li>1</li><li>8</li><li>0</li><li>8</li><li>3</li><li>9</li><li>4</li><li>2</li></ul><span>条</span></dd></dl>
+        <ul class="daasRun runStatus">
+            <li class="daasRunl daasRunt"><h5>数据储存情况</h5>
+                <ol class="daasRunOl">
+                    <li id="daasStorage"></li>
+                    <li id="daasClean"></li>
+                    <li id="daasDesensitization"></li>
+                </ol>
+                <div id="canvasNavBox">
+                    <canvas id="canvasNav" width="1280" height="40"></canvas>
+                </div>
+            </li>
+            <li class="daasRunr daasRunt"><h5>DaaS占用资源情况</h5>
+                <ol class="dataTarget">
+                    <li>
+                        <h4>集群负载</h4>
+                        <div id="dataLoad" class="dataChart"></div>
+                        <p class="dataFigure"><span>64</span><span>32</span></p>
+                    </li>
+                    <li>
+                        <h4>CPU使用量</h4>
+                        <div id="dataCpu" class="dataChart"></div>
+                        <p class="dataFigure"><span>100%</span><span>50%</span></p>
+                    </li>
+                    <li>
+                        <h4>内存使用量</h4>
+                        <div id="dataMemory" class="dataChart"></div>
+                        <span class="dataUse">331GB</span>
+                    </li>
+                    <li>
+                        <h4>网络使用量</h4>
+                        <div id="dataWeb" class="dataChart"></div>
+                        <p class="dataFigure"><span>50</span><span>25</span></p>
+                    </li>
+                </ol>
+            </li>
+            <li class="daasRunb"><h5>DaaS数据</h5>
+                <ol class="daasRunOlb">
+                    <li id="showSwoop"></li>
+                    <li>
+                        <h6>最近一小时处理的数据任务</h6>
+                        <!--<canvas id="supply1" width="208" height="134"></canvas>-->
+                        <!--<canvas id="supply1" width="100" height="190"></canvas>
+                        <canvas id="supply2" width="100" height="190"></canvas>
+                        <canvas id="getNum1" width="100" height="190"></canvas>
+                        <canvas id="getNum2" width="100" height="190"></canvas>-->
+                        <canvas id="supply1" width="208" height="134"></canvas>
+                        <canvas id="supply2" width="208" height="134"></canvas>
+                        <canvas id="getNum1" width="208" height="134"></canvas>
+                        <canvas id="getNum2" width="208" height="134"></canvas>
+                    </li>
+                    <li>
+                        <h6 class="dassHl dassHs">数据供应</h6>
+                        <canvas id="showDataSupply" width="360" height="200"></canvas>
+                    </li>
+                    <li>
+                        <h6 class="dassHr dassHs">数据存储</h6>
+                        <canvas id="showDataStorage" width="500" height="400">
+                            您的浏览器不支持canvas！
+                        </canvas>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <div class="dpsLayoutl borderColor dpsLayout">
+        <dl class="titlenav"><dt><h4>PaaS运行情况</h4></dt><dd><span>开发者工具包</span><ul><li>8</li><li>9</li></ul><span>个</span></dd></dl>
+        <ul class="paasRun runStatus">
+            <li class="paasRunl"><h5>PaaS运行情况</h5>
+                <table id="tablesPass" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <th>名称</th>
+                        <th>CPU占用率</th>
+                        <th>内存占用率</th>
+                        <th>内存使用量</th>
+                    </tr>
+                    <tr>
+                        <td>政务治理</td>
+                        <td><span>2</span>%</td>
+                        <td><span>3</span>%</td>
+                        <td><span>1215424</span>Mb</td>
+                    </tr>
+                    <tr>
+                        <td>指数决策</td>
+                        <td><span>2</span>%</td>
+                        <td><span>3</span>%</td>
+                        <td><span>715424</span>Mb</td>
+                    </tr>
+                    <tr>
+                        <td>双创服务</td>
+                        <td><span>2</span>%</td>
+                        <td><span>3</span>%</td>
+                        <td><span>615424</span>Mb</td>
+                    </tr>
+                    <tr>
+                        <td>安全治理</td>
+                        <td><span>2</span>%</td>
+                        <td><span>3</span>%</td>
+                        <td><span>315424</span>Mb</td>
+                    </tr>
+                    <tr>
+                        <td>大数据统计</td>
+                        <td><span>2</span>%</td>
+                        <td><span>3</span>%</td>
+                        <td><span>915424</span>Mb</td>
+                    </tr>
+                </table>
+            </li>
+            <li class="paasRunr paasRunt"><h5>平台开发者人数信息</h5>
+                <div id="theDevelopers"></div>
+            </li>
+            <li class="paasRunr paasRunb"><h5>各PaaS应用数占比</h5>
+                <div class="paasRuns" id="paasRunYy"></div>
+            </li>
+            <li class="paasRunr paasRunb paasRunbl"><h5>各PaaS开发者人数占比</h5>
+                <div class="paasRuns" id="paasRunKf"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="dpsLayoutr borderColor dpsLayout">
+        <dl class="titlenav"><dt><h4>SaaS运行情况</h4></dt><dd><span>当前平台应用数</span><ul><li>4</li><li>1</li></ul><span>个</span></dd></dl>
+        <ul class="saasRun runStatus">
+            <li class="saasRunl"><h5>各应用使用者比例及应用服务数</h5>
+                <div id="saasRunSerData"></div>
+                <ol class="saasRunOl">
+                    <li><h6>应用服务企业数</h6><span>65</span>家</li>
+                    <li><h6>应用服务政务府数</h6><span>8</span>家</li>
+                    <li><h6>累计访问量</h6><span>112151</span>次</li>
+                </ol>
+            </li>
+            <li class="saasRunr saasRunt"><h5>使用分布情况</h5>
+                <ol class="saasRunOlt">
+                    <li id="saasRunMap"></li>
+                    <li>
+                        <h6>当前使用者数量</h6>
+                        <p><span>4235</span>人</p>
+                    </li>
+                </ol>
+            </li>
+            <li class="saasRunr saasRunb"><h5>应用使用人数 Top5</h5>
+                <ol class="saasRunOlb saasRunOlbl">
+                    <li><nobr>分布式爬虫管理系统</nobr></li>
+                    <li><nobr>成都数据共享及创新服务平台</nobr></li>
+                    <li><nobr>可视化数据处理分析平台</nobr></li>
+                    <li><nobr>产业地图可视化</nobr></li>
+                    <li><nobr>宏观经济建设平台</nobr></li>
+                </ol>
+                <ol class="saasRunOlb saasRunOlbr">
+                    <li><strong style="width:9.52vw;"></strong><span>571</span>人</li>
+                    <li><strong style="width:7.18vw;"></strong><span>551</span>人</li>
+                    <li><strong style="width:7.42vw;"></strong><span>445</span>人</li>
+                    <li><strong style="width:7.18vw;"></strong><span>431</span>人</li>
+                    <li><strong style="width:6.7vw;"></strong><span>402</span>人</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+</section>
+<script src="libs/jquery.min.js"></script>
+<!--<script src="libs/starrySky.js"></script>-->
+<script src="static/js/common.js"></script>
+<script src="libs/echarts.js"></script>
+<script src="libs/china.js"></script>
+<script src="static/js/goveAffairsDps.js"></script>
+</body>
+</html>

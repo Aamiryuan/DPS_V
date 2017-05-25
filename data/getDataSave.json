@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "servername": "北京优易服务器集",
+    "serverram": 46,
+    "serverrate": 42
+  },
+  {
+    "id": 2,
+    "servername": "北京IDC机房服务器集",
+    "serverram": 37,
+    "serverrate":90
+  },
+  {
+    "id": 3,
+    "servername": "成都基地服务器集",
+    "serverram": 45,
+    "serverrate":29
+  }
+]

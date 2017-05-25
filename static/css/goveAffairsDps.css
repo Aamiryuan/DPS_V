@@ -1,0 +1,687 @@
+/*body{
+    min-height: 1080px;
+    min-width: 1920px;
+}*/
+.youelogo{
+    width: 194px;;
+    height: 64px;
+    margin-top: 1vh;
+    margin-left:2vw;
+}
+.dpsLayout{
+    width:49.3vw;
+    height: 44.7vh;
+    margin-top:0.5vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 0.8vw;
+}
+.dpsLayoutl{
+    float: left;
+}
+.dpsLayoutr{
+    float: right;
+}
+.userTimes{
+   position: absolute;
+    right: 2vw;
+    width: 10vw;
+    line-height: 8vh;
+    font-size: 1.8rem;
+}
+.userTimes li{
+  float: left;
+    width: 4vw;
+}
+.userTimes .fengexian{
+    width: 1px;
+    background-color: #fff;
+    display: block;
+    height: 1.6rem;
+    margin: 0 15px;
+    margin-top: 3vh;
+
+}
+
+.titlenav{
+    height:3.7vh;
+    line-height: 3.7vh;
+    /*background-color: #2f96fd;*/
+    overflow: hidden;
+}
+.titlenav dt{
+    font-size: 2.22rem;
+    float: left;
+}
+.titlenav dt h4{
+    font-weight:200;
+}
+.titlenav dd{
+    float: right;
+}
+.titlenav dd span{
+    float:left;
+    line-height: 5vh;
+    padding: 0 3px;
+}
+
+.titlenav dd strong{
+    color: #2b96c4;
+    font-size:2rem;
+    font-weight: normal;
+    padding: 0 0.2vw;
+    line-height: 4vh;
+}
+.titlenav dd ul{
+    float:left;
+}
+.titlenav dd ul li{
+    box-sizing: border-box;
+    float: left;
+    width: 2.3vh;
+    height: 2.8vh;
+    border: 1px solid #01BDE2;
+    border-radius: 3px;
+    margin: 0 1px;
+    margin-top: 0.45vh;
+    text-align: center;
+    line-height: 2.8vh;
+    color: #faa238;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+
+
+/*服务器运行状态*/
+
+.serverRun{
+    /*width: 47.7vw;*/
+    /*height: 44.2vh;*/
+    overflow: hidden;
+}
+.serverRun li{
+    width: 23.3vw;
+    height:19.7vh;
+}
+.serverRun li.serverRunl{
+    float: left;
+}
+.serverRun li.serverRunl h5 span{
+    color: #faa238;
+    padding-right: 4px;
+}
+.runStatus li.serverRunl .serverRunOlt{
+    width: 7.71vw;
+    height:16.2vh;
+    float: left;
+}
+.runStatus li.serverRunl .serverRunOlt li{
+    width: 7.7vw;
+    height: 3vh;
+    font-weight: normal;
+    border:none;
+}
+.runStatus li.serverRunl .serverRunOlt li h6{
+    font-size: 1.39rem;
+    font-weight: normal;
+}
+.runStatus li.serverRunl .serverRunOlta li{
+    width: 7.7vw;
+    height:8.09vh;
+    /*background-color: cornflowerblue;*/
+}
+.runStatus li.serverRunl .serverRunOlta li div{
+    width: 7.7vw;
+    height: 6vh;
+    /*background-color: #4636ff;*/
+    overflow: hidden;
+}
+.runStatus li.serverRunl .serverRunOltb li{
+    width: 7.7vw;
+    height:4.05vh;
+    /*background-color: #8a63ed;*/
+}
+.runStatus li.serverRunl .serverRunOltc li{
+    width:6.7vw;
+    padding-left:1vw;
+    height:5.4vh;
+    background: url("../img/lianjie.png") no-repeat;
+    background-position:0 20%;
+    /*background-color: #45edbc;*/
+}
+.runStatus li.serverRunl .serverRunOltb li h6{
+    color: #faa238;
+}
+.runStatus li.serverRunl .serverRunOltb li strong{
+    display: block;
+    width: 3.4vw;
+    height:0.8vh;
+    margin-top: 0.2vh;
+    background-color: #394264;
+    border-radius: 0.5vh;
+    float: left;
+}
+.runStatus li.serverRunl .serverRunOltb li i{
+    display: block;
+    width: 1.3vw;
+    height:0.8vh;
+    background-color: #2b96c4;
+    border-radius: 0.5vh;
+}
+.runStatus li.serverRunl .serverRunOltb li span{
+    font-size: 1.6rem;
+    line-height:1vh;
+    padding-left: 0.5vw;
+    float: left;
+}
+.runStatus li.serverRunl .serverRunOltc li span{
+    display: block;
+    line-height: 2.5vh;
+    font-size: 1.1rem;
+    margin-left: 1.5vw;
+}
+
+
+
+.serverRun li.serverRunr{
+    float:right;
+}
+.serverRun li.serverRunrWar{
+    position:relative;
+}
+.serverRun li.serverRunrWar .serverRunPr{
+    top: 10vh;
+    left: 10.5vw;
+    position:absolute;
+    font-size: 1.2rem;
+
+}
+.serverRun li.serverRunrWar .serverRunPr span{
+    color: #faa238;
+    font-size: 1.8rem;
+}
+.serverRun li.serverRunrWar .serverRunOlr{
+    top: 5vh;
+    left:1vw;
+    position:absolute;
+}
+.serverRun li.serverRunrWar .serverRunOlr li{
+    height: 2.2vh;
+    width:4.2vw;
+    /*padding-right:0.3vw;*/
+    border-radius: 2px;
+    margin-top: 0.5vh;
+    /*text-align: right;*/
+}
+.serverRun li.serverRunrWar .serverRunOlr li strong{
+    display:inline-block;
+    width:1.8vw;
+    margin-right: 0.4vw;
+    height: 2vh;
+    text-align: center;
+    float: left;
+
+}
+.serverRun li.serverRunrWar .serverRunOlr li span{
+    color: #faa238;
+
+}
+
+.serverRun li.serverRunr #serverWarn{
+
+    width: 23.2vw;
+    height: 16.1vh;
+}
+.serverRun li.serverRunb{
+    margin-top:0.5vh;
+}
+.serverRun li.serverRunb h5 span{
+    margin:0 0.6vw;
+}
+.serverRun li.serverRunb h5 span.actives{
+    color: #faa238;
+}
+.serverRun li.serverRunb h5 span:nth-child(0){
+    margin-left: 0;
+}
+.serverRun li.serverRunb .serverRunOlb{
+    color: #f00;
+}
+
+.serverRun li.serverRunb #cpuUseRatio{
+    width: 23.2vw;
+    height: 16.2vh;
+}
+.serverRun li.serverRunb .serverRunOl li {
+    width: 7.1vw;
+    height: 5.4vh;
+    float: right;
+    border: none;
+    text-align: right;
+}
+
+
+.serverRun li.serverRunb .serverRunOl li h6{
+    line-height:4vh;
+    height: 3vh;
+}
+.serverRun li.serverRunb .serverRunOl li span{
+    color: #faa238;
+    font-size: 1.6rem;
+}
+.serverRun li.serverRunb .serverRunOl li#storUseRatio{
+    width:16vw;
+    height: 16.2vh;
+    /*background-color: #cc389e;*/
+}
+.serverRun li.serverRunb .serverRunOl li.stroCpu{
+    background:url("../img/wendu.png") no-repeat;
+    background-size: 0.8vw 4vh;
+    background-position: 1.1vw 0.5vh;
+
+}
+.serverRun li.serverRunb .serverRunOl li.stroYp{
+    background:url("../img/yingpanWd.png") no-repeat;
+    background-size: 1.9vw 2.8vh;
+    background-position: 0.5vw 1vh;
+}
+.serverRun li.serverRunb .serverRunOl li.stroZb{
+    background:url("../img/zhuban.png") no-repeat;
+    background-size: 2vw 3.3vh;
+    background-position: 0.5vw 0.8vh;
+}
+
+
+
+
+
+
+/*Daas运行情况*/
+
+.daasRun{
+    overflow: hidden;
+}
+.daasRun li{
+    height:19.7vh;
+}
+.daasRun .daasRunl{
+    width: 33.4vw;
+    float: left;
+}
+
+.daasRun .daasRunl .daasRunOl{
+    overflow: hidden;
+}
+.daasRun .daasRunl .daasRunOl li{
+    float: left;
+    /*background-color: #a2b3ff;*/
+    width: 11.02vw;
+    height: 14vh;
+    border: none;
+}
+.daasRun .daasRunl #canvasNavBox{
+    /*background-color: #32a8ff;*/
+    width: 33.2vw;
+    height: 2.2vh;
+}
+.daasRun .daasRunl #canvasNavBox #canvasNav{
+    /*background-color: #9af0ff;*/
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.daasRun .daasRunr{
+    width: 13.4vw;
+    float: right;
+}
+.daasRun .daasRunb{
+    width:47.6vw;
+    margin-top:0.5vh;
+    float: left;
+}
+.daasRun .daasRunb .daasRunOlb li{
+    float: left;
+    width:10.82vw;
+    height:16.2vh;
+    border: none;
+    box-sizing: border-box;
+}
+
+.daasRun .daasRunb .daasRunOlb li:nth-child(1){
+    width: 13.4vw;
+    /*background-color: #609aff;*/
+}
+.daasRun .daasRunb .daasRunOlb li:nth-child(2) h6{
+
+    font-size: 1.2rem;
+    text-align: right;
+    line-height: 2.2vh;
+}
+.daasRun .daasRunb .daasRunOlb li:nth-child(3) h6{
+    position: absolute;
+    text-align:left;
+    padding-left: 1vw;
+}
+.daasRun .daasRunb .daasRunOlb li:nth-child(4) h6{
+    position: absolute;
+    right:1vw;
+    padding-right: 1vw;
+    text-align: right;
+}
+.daasRun .daasRunb .daasRunOlb li:nth-child(2) canvas{
+    width:5.41vw;
+    height:7vh;
+    float: left;
+    /*background-color: #ebff77;*/
+}
+.daasRun .daasRunb .daasRunOlb li:nth-child(3) canvas{
+    width:100%;
+    height:100%;
+    float: left;
+
+}
+.daasRun .daasRunb .daasRunOlb li:nth-child(4){
+    width: 12.4vw;
+    /*background-color: #b6a7ff;*/
+}
+.daasRun .daasRunb .daasRunOlb li:nth-child(4) canvas{
+    width:100%;
+    height:100%;
+}
+
+
+
+/*-----------------------------------------*/
+
+.dataTarget{
+    height:16.2vh;
+    width: 13.4vw;
+    overflow: hidden;
+}
+.dataTarget li{
+    width:6.5vw;
+    height:7.8vh;
+    float: left;
+    background: #394264;
+    margin-top:0.2vh;
+    margin-left:0.1vw;
+    /*border-radius: 3px;*/
+    position: relative;
+}
+.dataTarget .dataBottom{
+    margin-bottom: 0;
+}
+.dataTarget li:nth-of-type(even){
+    /*margin-left: 2.3%;*/
+}
+.dataTarget li h4{
+    font-size: 1.4rem;
+    font-weight: normal;
+    padding-left: 8%;
+    height: 18%;
+}
+.dataTarget li p{
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+.dataTarget .dataNobe p{
+    font-size: 1.1rem;
+    color: #faa238;
+    text-align: center;
+    line-height: 6rem;
+    position: static;
+}
+.dataTarget .dataChart{
+    width: 100%;
+    height: 80%;
+}
+.dataTarget .dataFigure{
+    position: absolute;
+    font-size: 1.1rem;
+    left: 15%;
+    top: 15%;
+    /*width: 25%;*/
+}
+.dataTarget .dataFigure span{
+    display: block;
+    line-height:2rem;
+}
+.dataTarget .dataUse{
+    position: absolute;
+    top:32%;
+    right:49%;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+/*Paas运行情况*/
+
+.paasRun{
+    overflow: hidden;
+}
+.paasRun li{
+    width: 23.4vw;
+}
+.paasRun .paasRunl{
+    height:39.9vh;
+    float: left;
+
+}
+
+
+.paasRun .paasRunl table{
+    margin-left:1.15vw;
+    margin-top: 1.75vh;
+    width:21.6vw;
+    height:33.5vh;
+    border-right:1px solid #394264;border-bottom:1px solid #394264;
+}
+
+.paasRun .paasRunl table tr th{
+    height: 3.8vh;
+    color: #fefefe;
+    border-left:1px solid #394264;border-top:1px solid #394264;
+    text-align:center;
+}
+.paasRun .paasRunl table tr td{
+    color: #fefefe;
+    border-left:1px solid #394264;
+    border-top:1px solid #394264;
+    text-align:center;
+}
+.paasRun .paasRunl table tr td span{
+    color: #ffa900;
+    font-size: 1.6rem;
+
+}
+
+
+.paasRun .paasRunr{
+    height:19.7vh;
+    float: right;
+}
+.paasRun .paasRunr #theDevelopers{
+    height:16.4vh;
+    width: 23.4vw;
+}
+.paasRun .paasRunb{
+    margin-top:0.5vh;
+    width: 11.5vw;
+}
+
+.paasRun .paasRunb .paasRuns{
+    height:16.2vh;
+    width: 11.4vw;
+}
+.paasRun .paasRunbl{
+    margin-right: 0.4vw;
+
+}
+
+/*Saas运行情况*/
+
+.saasRun{
+    overflow: hidden;
+}
+.saasRun li{
+    width: 23.4vw;
+}
+.saasRun .saasRunl{
+    height:39.9vh;
+    float: left;
+}
+.saasRun .saasRunl #saasRunSerData{
+    width: 23.2vw;
+    height:30.9vh;
+    /*background-color: #03394A;*/
+}
+
+.saasRun .saasRunl .saasRunOl li{
+    width: 7.75vw;
+    height: 5.5vh;
+    background-color: #2a3456;
+    float: left;
+    border: none;
+    text-align: right;
+    line-height:2vh;
+    padding-right: 0.6vw;
+    font-size: 1.38rem;
+}
+.saasRun .saasRunl .saasRunOl li span{
+    color: #ffa900;
+    font-size: 2.2rem;
+}
+.saasRun .saasRunl .saasRunOl h6{
+    text-align: left;
+    line-height: 3vh;
+    font-size: 1.1rem;
+    padding-left: 0.2vw;
+}
+.saasRun .saasRunl .saasRunOl li:nth-child(2){
+    background-color: #1d274d;
+}
+.saasRun .saasRunl .saasRunOl li:nth-child(3){
+    background-color: #131f47;
+}
+.saasRun .saasRunr{
+    height:19.7vh;
+    float: right;
+}
+.saasRun .saasRunr .saasRunOlt li{
+    /*width: 9.4vw;*/
+    height:16.2vh;
+    float: left;
+}
+.saasRun .saasRunr .saasRunOlt li:nth-child(1){
+    width: 15.8vw;
+
+    border: none;
+}
+.saasRun .saasRunr .saasRunOlt li:nth-child(2){
+    width: 5.4vw;
+    height: 9vh;
+    text-align: center;
+    margin-top: 3vh;
+    line-height: 5vh;
+}
+.saasRun .saasRunr .saasRunOlt li:nth-child(2) h6{
+    height: 3.24vh;
+    line-height: 3.24vh;
+    background-color: #59648e;
+
+}
+.saasRun .saasRunr .saasRunOlt li:nth-child(2) span{
+    color: #ffa900;
+    font-size: 2.2rem;
+}
+
+.saasRun .saasRunb{
+    margin-top:0.5vh;
+}
+.saasRun .saasRunb .saasRunOlb{
+    width: 5vw;
+    /*background-color: #f00;*/
+    float: left;
+    margin-top: 0.7vh;
+
+}
+.saasRun .saasRunb .saasRunOlb li{
+    border: none;
+    border-bottom: solid 1px #394264;
+    height: 2.8vh;
+    line-height: 3.1vh;
+
+}
+.saasRun .saasRunb .saasRunOlbl{
+    width: 7.4vw;
+    border-right: solid 1px #394264;
+    margin-left:1.5vw;
+    padding: 0.5vh 0;
+
+    /*text-align: right;*/
+}
+.saasRun .saasRunb .saasRunOlbl li{
+    width: 7.4vw;
+}
+.saasRun .saasRunb .saasRunOlbl nobr{
+    margin-left: -1vw;
+    text-align: right;
+    width: 8.2vw;
+    display: block;
+    font-size: 1.1rem;
+    overflow: hidden;
+}
+
+.saasRun .saasRunb .saasRunOlbr{
+    width: 13.8vw;
+    margin-top: 1.2vh;
+}
+.saasRun .saasRunb .saasRunOlbr li{
+    width: 13.8vw;
+}
+.saasRun .saasRunb .saasRunOlbr li span{
+    color: #ffa900;
+    font-size: 2.2rem;
+}
+.saasRun .saasRunb .saasRunOlbr li strong{
+    width: 8vw;
+    background-color: #00b9f2;
+    display: inline-block;
+    height: 1.2vh;
+    margin:0.4vh 0.4vw;
+}
+.saasRun .saasRunb .saasRunOlbr li:nth-child(1) strong{
+    width:10vw;
+
+}
+
+
+.runStatus li{
+    border: solid 1px #59648e;
+    box-sizing: border-box;
+}
+.runStatus li h5{
+    box-sizing: border-box;
+    height:3.24vh;
+    padding-left:0.5vw;
+    background-color:#394264;
+    border-bottom: solid 1px #59648e;
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 3.24vh;
+    overflow: hidden;
+}
+
