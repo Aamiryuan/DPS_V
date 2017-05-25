@@ -2,8 +2,8 @@
  * Created by windowss on 2017/5/19.
  */
 
-var G_domaint="master/master/";s
-paths={
+var G_domaint="https://github.com/Aamiryuan/DPS_V/blob/master/data/";
+var paths={
     "getDataGrab":G_domaint+'data/getDataGrab.json',
     "getGrabData":G_domaint+'data/getGrabData.json',
     "getProvideData":G_domaint+'data/getProvideData.json',
